@@ -19,6 +19,7 @@ uniqueValues = [x for x in samples.keys()]
 
 for i in sortIndex:
 	if samples[uniqueValues[i]] > 1:
+		
 		print(uniqueValues[i].lstrip('0'), samples[uniqueValues[i]])	
 
 
