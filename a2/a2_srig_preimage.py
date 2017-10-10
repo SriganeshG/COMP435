@@ -1,19 +1,15 @@
-import os
-import sys
-import hashlib
-import random
-import binascii
-import string
-
+import os, sys, hashlib, random, string, binascii
+from random import randint
 hash1 = sys.argv[1]
+hash1 = hash1[0:24]
+randomStr = ''.join(random.choice(string.ascii_uppercase + string.digits) for i in range(1))
 hash2 = ' '
-random = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(1)])
-
 while(hash1 != hash2):
-	hash2 = hashlib.sha256(random).hexdigest()	
-	#'{:.24}'.format(hash2)
-	hash2 = hash2[:24]
-	random + str(randint(0,9))
+	
+	hash2 = hashlib.md5(randomStr.encode('UTF-8')).hexdigest()
+	hash2 = hash2[0:24]
+	
+	randomStr = randomStr + ''.join(random.choice(string.ascii_uppercase + string.digits) for i in range(1))
 
 print(hash2)
 
