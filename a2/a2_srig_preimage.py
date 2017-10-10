@@ -12,6 +12,6 @@ while(hash1 != hash2):
 	hash2 = hash2[0:6]
 
 print(randomStr)
-print(hash1)
-print(hash2)
-
+#ayy found unn10357ls
+#onov3n
+#should be working, but sometimes takes a while? normal?
