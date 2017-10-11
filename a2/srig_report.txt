@@ -18,10 +18,26 @@ kiqffgb iss8hi2 5527
 AVG # of Hashes: 5191.4
 
 PRE-IMAGE RESISTANCE (d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592)
-1mzf5jc 514054
-60sh6wzwpxf282 5609886
-5mh0ycoubh 2893027
+h8f6bpe 8433654
+2538vf7 10060300
+veowfat 6738286
+6rz7r9t 14586192
+04rl890 2671254
+vxj1enb 32271674
+kd5ixma 9305869
+98yubsq 28943140
+1iwvdj9 7154834
+278yxic 81493
+yd84cyh 6946583
+7xfwvkw 35548037
+thp6jrq 2309788
+4jgj2ud 1791386
+dskhir8 7416329
+we1kbqi 2268965
 
+AVG # of Hashes: 11768518.9333
+
+Easier to brute force collision-resistant thanks to pidgeon-hole-principle, like the birthday puzzle.
 
 
 

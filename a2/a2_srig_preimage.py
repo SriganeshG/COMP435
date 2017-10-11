@@ -1,19 +1,19 @@
-import os, sys, hashlib, random, string
+import os, sys, hashlib, random, string, time
 
 hash1 = sys.argv[1]
-hash1 = hash1[0:6]
-hash2 = ' '
+hash24 = hash1[0:6]
+hashRnd = ''
 count = 0
-randomStr = ''.join(random.choice(string.digits) for i in range(6))
+s = string.ascii_lowercase + string.digits
 
-while(hash1 != hash2):
-	randomStr = randomStr + ''.join(random.choice(string.ascii_lowercase) for i in range(1+(count//750000)))
+rand_str = lambda n: ''.join([random.choice(s) for i in range(n)])
+
+while(hash24 != hashRnd):
+	randomStr = rand_str(7)
 	count=count+1
-	hash2 = hashlib.sha256(randomStr.encode('ascii')).hexdigest()
-	hash2 = hash2[0:6]
+	hashRnd = hashlib.sha256(randomStr.encode('ascii')).hexdigest()
+	hashRnd = hashRnd[0:6]
 
-print(randomStr + " " + count)
-#ayy found unn10357ls
-#onov3n
-#yb3dufg4i4bod
-#sometimes really fast sometimes slow. normal?
+print(randomStr + " " + str(count))
+
+
