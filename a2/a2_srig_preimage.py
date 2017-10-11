@@ -11,7 +11,7 @@ while(hash1 != hash2):
 	hash2 = hashlib.sha256(randomStr.encode('ascii')).hexdigest()
 	hash2 = hash2[0:6]
 
-print(randomStr)
+print(randomStr + " " + count)
 #ayy found unn10357ls
 #onov3n
 #yb3dufg4i4bod
